@@ -1,0 +1,39 @@
+<!-- templates/result.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Heart Disease Prediction Result</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        h2 {
+            color: #007BFF;
+        }
+
+        p {
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <h1>Heart Disease Prediction Result</h1>
+    
+    <h2>Prediction:</h2>
+    <p>The model predicts: {% if prediction == 1 %} HIGH CHANCES OF HEART DISEASE :( {% else %} YOU HAVE A HEALTHY HEART :) {% endif %}</p>
+
+    <p><a href="/">Back to Prediction</a></p>
+</body>
+</html>
